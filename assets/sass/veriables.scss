@@ -1,0 +1,38 @@
+@import "fonts";
+
+$main-font: 'Poppins', sans-serif;
+
+$primary-color: #01EFFF;
+$secondary-color: #F0FFFF;
+
+$primary-bg-color: #021c3b;
+
+$page-heading: #F3FFFF;
+
+/* -------- Home page --------- */
+$home-headings-color: linear-gradient(white, #dbdde0, #38495a);
+
+/* -------- About page --------- */
+$img-bg-holder : radial-gradient(ellipse at bottom, #062f68 0%, $primary-bg-color 100%);
+$txt-para-color: #D3D3D3;
+$mps-vihanga: 'Courgette', cursive;
+$mps-vihanga-color: -webkit-linear-gradient(#01EFFF, #06b5c4, #38495a);
+
+/* -------- About page buttons--------- */
+:root {
+  --primary: #01EFFF;
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+/* -------- Portfolio page / Resume Page--------- */
+$secondary-fadeLight-color : #c8d0e7;
+$secondary-fade-color: #9baacf;
+
+/* -------- Service page --------- */
+$info-font: 'Courgette', cursive;
+
+/* -------- Footer --------- */
+$footer-bg-color: #062b51;

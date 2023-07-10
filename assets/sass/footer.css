@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); /* Main Font */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap"); /* MPS Vihnga */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap"); /* Need info */
+/* -------- Home page --------- */
+/* -------- About page --------- */
+/* -------- About page buttons--------- */
+:root {
+  --primary: #01EFFF;
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+/* -------- Service page --------- */
+/* -------- Footer --------- */
+.footer {
+  width: 100%;
+  height: 20vh;
+  background: #062b51;
+}
+
+/*# sourceMappingURL=footer.css.map */

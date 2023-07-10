@@ -1,0 +1,501 @@
+@import "veriables";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+html{
+  font-size: 62.5%; /* 16px * 0.625 = 10px */
+}
+.about-me{
+  position: relative;
+  background-color: $primary-bg-color;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.about-heading{
+  flex-grow: 0.5;
+  /*border: 1px solid red;*/
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  color: $page-heading;
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.5rem;
+}
+.about-container{
+  flex-grow: 3;
+  /*border: 1px solid red;*/
+
+  display: flex;
+  justify-content: space-between;
+}
+.abt-img-container{
+  /*border: 1px solid yellow;*/
+  flex-grow: 1.6;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-container{
+  /*border: 1px solid deeppink;*/
+  flex-grow: 2;
+
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.img-shadow-container{
+  /*border: 1px solid green;*/
+
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  width: 100%;
+  height: 65%;
+  background: $primary-color;
+  clip-path: polygon(0 0,80% 0,60% 100%,0 100%);
+  border-radius: 2rem 0 0 2rem/2rem 0 0 2rem;
+}
+.img-holder-container{
+  /*border: 1px solid green;*/
+
+  position: absolute;
+  top: 5.4rem;
+  left: 2.1rem;
+  width: 90%;
+  height: 60%;
+  background: $img-bg-holder;
+  border-radius: 20px 20px 20px 20px/20px 20px 20px 20px;
+
+}
+.vihanga-img{
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  width: 100%;
+  height: 85%;
+
+  mask-image:url("../image/mask-image.png");
+  -webkit-mask-image:url("../image/mask-image.png");
+  mask-position: bottom;
+  -webkit-mask-position: bottom;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size:45rem ;
+  -webkit-mask-size: 45rem;
+}
+
+/* ------------ Quality Container ------------- */
+.quality-container{
+  /*border: 1px solid deeppink;*/
+  flex-grow: 1.8;
+}
+.quality-holder-container{
+  /*border: 1px solid white;*/
+
+  position: relative;
+  width: 100%;
+  height: 77%;
+  left: -2rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.quality-plus-container {
+  position: absolute;
+
+  background: $primary-color;
+  width: 25px;
+  height: 25px;
+  margin: 2rem 0 0 0;
+  clip-path: polygon(evenodd, 25% 25%, 50% 25%, 75% 50%, 50% 75%, 25% 50%, 37.5% 37.5%, 37.5% 62.5%, 62.5% 62.5%, 62.5% 37.5%, 50% 37.5%, 62.5% 50%, 50% 62.5%, 37.5% 50%, 43.75% 43.75%, 50% 43.75%, 56.25% 50%, 50% 56.25%, 43.75% 50%, 46.88% 46.88%, 53.13% 46.88%, 53.13% 53.13%, 46.88% 53.13%, 46.88% 46.88%, 50% 43.75%, 56.25% 43.75%, 56.25% 56.25%, 43.75% 56.25%, 43.75% 43.75%, 50% 37.5%, 37.5% 37.5%, 50% 25%, 75% 25%, 75% 75%, 25% 75%, 0% 50%, 50% 0%, 100% 50%, 50% 100%, 25% 75%);
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.quality-content{
+  position: absolute;
+  left: 4rem;
+
+  width: 100%;
+  height: 3.5rem;
+  padding-top: 1.5rem;
+  color: $secondary-color;
+  letter-spacing: 0.4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/*------------------- Links Container ---------------------*/
+.links-container{
+  /*border: 1px solid yellow;*/
+
+  position: absolute;
+  bottom: 8rem;
+  width: 85%;
+  height: 10%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.links-container>div>a{
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------- About Me Content ---------------------*/
+.abt-content-container {
+  /*border: 1px solid yellow;*/
+  flex-grow: 0.4;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.abt-content-holder{
+  flex-grow: 2;
+  /*border: 1px solid red;*/
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.my-content-holder{
+  flex-grow: 1;
+  /*border: 1px solid blue;*/
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.my-content-holder>div:first-child{
+  /*border: 1px solid white;*/
+  flex-grow: 1;
+
+  display: flex;
+  align-items: flex-end;
+}
+.my-content-holder>div:nth-child(2){
+  /*border: 1px solid white;*/
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+}
+.my-content-holder>div:nth-child(3){
+  /*border: 1px solid white;*/
+  flex-grow: 1;
+}
+.my-content-holder>div:last-child{
+  /*border: 1px solid white;*/
+  flex-grow: 1;
+}
+.abt-me-hello{
+
+  color: $secondary-color;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  margin-left: 6rem;
+}
+.abt-me-iam{
+
+  color: $secondary-color;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  margin: -2rem 0 0 6rem;
+
+}
+.abt-me-iam>b{
+  font-size:3rem;
+  font-family: $mps-vihanga;
+  background: $mps-vihanga-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.anim-text{
+
+  position: absolute;
+  color: $secondary-color;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  margin: -2rem 0 0 7rem;
+
+  display: flex;
+  align-items: center;
+
+}
+.anim-text>b{
+  font-size: 3.4rem;
+}
+
+.anim-text b::before{
+  content: "";
+  color: $primary-color;
+  animation: words 12s infinite;
+}
+
+.anim-text b::after{
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  border-left: 2px solid #01EFFF;
+  right: -8px;
+  background-color: $primary-bg-color;
+  animation: cursor 8s infinite, typing 20s steps(20) infinite;
+}
+
+@keyframes cursor {
+  to{
+    border-left: 2px solid #01EFFF;
+  }
+}
+@keyframes words {
+  0%,35%{
+    content: "Web Developer";
+  }
+  40%,70%{
+    content: "Android Developer";
+  }
+  75%,100%{
+    content: "Bloger";
+  }
+
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: 95%;
+  }
+}
+.abt-me-para{
+
+  color: $txt-para-color;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+.abt-btn-holder{ /* About me Button */
+  /*border: 1px solid deeppink;*/
+  flex-grow: 1.5;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.abt-btn-holder>a{
+  text-decoration: none;
+}
+/*  BUTTONS  */
+.btn {
+  width: 17rem;
+  height: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem , -0.2rem -0.2rem 0.5rem var(--white);
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn__secondary {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  color: var(--greyDark);
+}
+.btn__secondary:hover {
+  color: var(--primary);
+}
+.btn__secondary:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+.btn p {
+  font-size: 2rem;
+  font-family: $main-font;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*----------------------- Skill Anim Container --------------------------*/
+.skills-anim-container{
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 15vh;
+  background: $primary-bg-color;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.anim-div{
+  /*border: 1px solid white;*/
+  width: 8rem;
+  height: 100%;
+}
+.anim-div01{
+  animation: div1 10s ease-in-out infinite;
+}
+@keyframes div1 {
+  0%,30%{
+    background-image: url("../image/skills/html-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  35%,65%{
+    background-image: url("../image/skills/bootstrap-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  70%,100%{
+    background-image: url("../image/skills/git-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.anim-div02{
+  animation: div2 10s ease-in-out infinite;
+}
+@keyframes div2 {
+  0%,30%{
+    background-image: url("../image/skills/css-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  35%,65%{
+    background-image: url("../image/skills/angular-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  70%,100%{
+    background-image: url("../image/skills/intellij-idea-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.anim-div03{
+  animation: div3 10s ease-in-out infinite;
+}
+@keyframes div3 {
+  0%,30%{
+    background-image: url("../image/skills/sass-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  35%,65%{
+    background-image: url("../image/skills/spring-boot-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  70%,100%{
+    background-image: url("../image/skills/mysql-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.anim-div04{
+  animation: div4 10s ease-in-out infinite;
+}
+
+@keyframes div4 {
+  0%,30%{
+    background-image: url("../image/skills/javascript-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  35%,65%{
+    background-image: url("../image/skills/typescript-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  70%,100%{
+    background-image: url("../image/skills/postman-api-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.anim-div05{
+  animation: div5 10s ease-in-out infinite;
+}
+
+@keyframes div5 {
+  0%,30%{
+    background-image: url("../image/skills/jquery-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  35%,65%{
+    background-image: url("../image/skills/firebase-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  70%,100%{
+    background-image: url("../image/skills/android-70.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

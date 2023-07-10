@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); /* Main Font */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+/* -------- Home page --------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* 16px * 0.625 = 10px */
+}
+
+.main-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /*border: 1px solid blue;*/
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  /*border: 1px solid hotpink;*/
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----------------------- Content Container ---------------------------*/
+.main-content {
+  /*border: 1px solid blue;*/
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vision {
+  /*border: 1px solid yellow;*/
+  flex-grow: 1;
+  letter-spacing: 5rem;
+  font-size: 5.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-name: animVision;
+}
+
+.into {
+  /*border: 1px solid red;*/
+  flex-grow: 1;
+  letter-spacing: 2.5rem;
+  font-size: 5.6rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-name: animInto;
+}
+
+.reality {
+  /*border: 1px solid yellow;*/
+  flex-grow: 1;
+  letter-spacing: 5rem;
+  font-size: 5.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-name: animReality;
+}
+
+.home-headings {
+  background: linear-gradient(white, #dbdde0, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  filter: drop-shadow(2.5rem 2.5rem 0.6rem #38495a);
+}
+
+@keyframes animVision {
+  0%, 15% {
+    transform: translateY(-2.6rem);
+    opacity: 0;
+  }
+  35%, 80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  92%, 100% {
+    transform: translateY(-0.4rem);
+    opacity: 0;
+  }
+}
+@keyframes animInto {
+  0%, 25% {
+    transform: translateY(-2.6rem);
+    opacity: 0;
+  }
+  45%, 80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  92%, 100% {
+    transform: translateY(-0.4rem);
+    opacity: 0;
+  }
+}
+@keyframes animReality {
+  0%, 35% {
+    transform: translateY(-2.6rem);
+    opacity: 0;
+  }
+  55%, 80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  92%, 100% {
+    transform: translateY(-0.4rem);
+    opacity: 0;
+  }
+}
+/*----------------------- Spaceship Container ---------------------------*/
+.main-anim-img {
+  position: relative;
+  /*border: 1px solid red;*/
+  flex-grow: 1;
+}
+
+.spaceship-container {
+  /*border: 1px solid palegoldenrod;*/
+  position: absolute;
+  top: 8rem;
+  left: 15rem;
+  width: 8rem;
+  height: 8rem;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-name: animSpaceShip;
+}
+
+.spaceship {
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes animSpaceShip {
+  0% {
+    transform: translateX(-170rem) translateY(-10rem);
+    opacity: 0;
+  }
+  40% {
+    transform: translateX(-6rem) translateY(15rem);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(5rem) translateY(10rem);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-15rem) translateY(-2rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-130rem) translateY(-25rem);
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=home-page.css.map */
