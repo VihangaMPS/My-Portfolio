@@ -64,7 +64,7 @@
     outline: #01EFFF;
     margin-left: 3rem;
   }
-  input:hover{
+  input:focus{
     border: 0.3rem solid #01EFFF;
   }
   input::placeholder{
@@ -87,7 +87,7 @@
     outline: none;
     margin-left: 3rem;
   }
-  input:hover{
+  input:focus{
     border: 0.3rem solid #01EFFF;
   }
   input::placeholder{
@@ -113,7 +113,7 @@
     outline: none;
     margin-left: 3rem;
   }
-  textarea:hover{
+  textarea:focus{
     border: 0.3rem solid #01EFFF;
   }
   textarea::placeholder{
@@ -203,9 +203,9 @@
 
     i{
       position: relative;
-      top: 2rem;
-      left: 18rem;
-      font-size: 4.8rem;
+      top: 3rem;
+      left: 19rem;
+      font-size: 4.5rem;
 
       display: flex;
       justify-content: center;
@@ -227,6 +227,10 @@
     /*border: 1px solid red;*/
     flex-grow: 1;
 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
     a{
       text-decoration: none;
 
@@ -236,16 +240,16 @@
         font-weight: bold;
         letter-spacing: 3px;
         text-transform: uppercase;
-
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
       }
     }
   }
   .contact-info-detail{
     /*border: 1px solid red;*/
     flex-grow: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
     a{
       text-decoration: none;
@@ -255,10 +259,6 @@
         font-size: 1.8rem;
         font-weight: bold;
         letter-spacing: 2px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
     }
   }
