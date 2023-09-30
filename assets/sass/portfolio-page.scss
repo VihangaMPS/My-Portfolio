@@ -3,7 +3,7 @@
 .portfolio{
   background-color: $primary-bg-color;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 
   display: flex;
   justify-content: space-between;
@@ -24,126 +24,10 @@
   align-items: flex-end;
 }
 .portfolio-content{
-  /*border: 1px solid red;*/
-  flex-grow: 4;
-
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.portfolio-projects-line01 {
-  /*border: 1px solid blue;*/
-  flex-grow: 1;
-
-  display: flex;
-  justify-content: space-between;
-}
-.portfolio-projects-line02{
-  /*border: 1px solid blue;*/
-  flex-grow: 1;
-
-  display: flex;
-  justify-content: space-between;
-}
-.div-all {
-  /*border: 1px solid yellow;*/
-  flex-grow: 1;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.project-bg-container{
-  width: 90%;
-  height: 90%;
-  /*border: 1px solid red;*/
-  border-radius: 1rem;
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  border: 1px solid red;
 
 }
-/* --------- Project img ---------- */
-.project-img-container{
-  /*border: 1px solid white;*/
-  flex-grow: 6;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.project-img{
-  /*border: 1px solid deeppink;*/
-  width: 90%;
-  height: 95%;
-
-  position: relative;
-}
-.project-img-fit{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  transition: 200ms all linear;
-}
-.project-img-fit:hover{
-  transition: 200ms all linear;
-  transform: scale(1.05);
-
-}
-/* --------- Project Topic ---------- */
-.project-topic{
-  /*border: 1px solid white;*/
-  flex-grow: 0.1;
-
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.main-topic{
-  /*border: 1px solid yellow;*/
-  flex-grow: 2;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  a{
-    text-decoration: none;
-    span{
-      color: $secondary-color;
-      font-size: 2.3rem;
-      letter-spacing: 0.2rem;
-    }
-  }
-
-  :hover{
-    color: $primary-color;
-  }
-}
-.project-category{
-  /*border: 1px solid yellow;*/
-  flex-grow: 1;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  a{
-    text-decoration: none;
-    span{
-      color: $secondary-fade-color;
-      font-size: 1.5rem;
-      letter-spacing: 0.15rem;
-    }
-  }
-}
 
 
 
