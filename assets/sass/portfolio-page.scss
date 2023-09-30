@@ -3,7 +3,7 @@
 .portfolio{
   background-color: $primary-bg-color;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
 
   display: flex;
   justify-content: space-between;
@@ -25,6 +25,7 @@
 }
 .portfolio-content{
   border: 1px solid red;
+  flex-grow: 4;
 
 }
 
