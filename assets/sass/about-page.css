@@ -13,7 +13,9 @@
   --greyDark: #9baacf;
 }
 
+/* -------- Portfolio page / Resume Page--------- */
 /* -------- Service page --------- */
+/* -------- Footer --------- */
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +59,7 @@ html {
 
 .abt-img-container {
   /*border: 1px solid yellow;*/
-  flex-grow: 1.6;
+  flex-grow: 3;
   display: flex;
   justify-content: space-between;
 }
@@ -179,7 +181,7 @@ html {
 /*------------------- About Me Content ---------------------*/
 .abt-content-container {
   /*border: 1px solid yellow;*/
-  flex-grow: 0.4;
+  flex-grow: 0.5;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -223,6 +225,8 @@ html {
 .my-content-holder > div:last-child {
   /*border: 1px solid white;*/
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .abt-me-hello {
@@ -238,7 +242,6 @@ html {
   color: #F0FFFF;
   font-size: 2.8rem;
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 1.5rem;
   margin: -2rem 0 0 6rem;
 }
@@ -251,12 +254,20 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+.abt-me-para {
+  color: #D3D3D3;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+
 .anim-text {
   position: absolute;
   color: #F0FFFF;
   font-size: 3rem;
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 1.5rem;
   margin: -2rem 0 0 7rem;
   display: flex;
@@ -265,12 +276,13 @@ html {
 
 .anim-text > b {
   font-size: 3.4rem;
+  text-transform: uppercase;
 }
 
 .anim-text b::before {
   content: "";
   color: #01EFFF;
-  animation: words 12s infinite;
+  animation: words 8s steps(2) infinite;
 }
 
 .anim-text b::after {
@@ -281,7 +293,7 @@ html {
   border-left: 2px solid #01EFFF;
   right: -8px;
   background-color: #021c3b;
-  animation: cursor 8s infinite, typing 20s steps(20) infinite;
+  animation: cursor 8s infinite, typing 20s steps(17) infinite;
 }
 
 @keyframes cursor {
@@ -290,14 +302,11 @@ html {
   }
 }
 @keyframes words {
-  0%, 35% {
+  0%, 50% {
     content: "Web Developer";
   }
-  40%, 70% {
+  55%, 100% {
     content: "Android Developer";
-  }
-  75%, 100% {
-    content: "Bloger";
   }
 }
 @keyframes typing {
@@ -308,16 +317,6 @@ html {
     width: 95%;
   }
 }
-.abt-me-para {
-  color: #D3D3D3;
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  display: flex;
-  justify-content: center;
-}
-
 .abt-btn-holder { /* About me Button */
   /*border: 1px solid deeppink;*/
   flex-grow: 1.5;

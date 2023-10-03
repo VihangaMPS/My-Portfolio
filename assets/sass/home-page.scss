@@ -37,11 +37,10 @@ html{
 
 .vision{
   /*border: 1px solid yellow;*/
-  flex-grow: 2;
+  flex-grow: 5;
 
-  letter-spacing: 5rem;
-  font-size: 5.5rem;
-  font-weight: bold;
+  letter-spacing: 4rem;
+  font-size: 4.5rem;
 
   display: flex;
   justify-content: center;
@@ -53,9 +52,8 @@ html{
   /*border: 1px solid red;*/
   flex-grow: 1;
 
-  letter-spacing: 2.5rem;
-  font-size: 5.6rem;
-  font-weight: bold;
+  letter-spacing: 2.3rem;
+  font-size: 4.6rem;
 
   display: flex;
   justify-content: center;
@@ -67,9 +65,8 @@ html{
   /*border: 1px solid yellow;*/
   flex-grow: 1;
 
-  letter-spacing: 5rem;
-  font-size: 5.5rem;
-  font-weight: bold;
+  letter-spacing: 4rem;
+  font-size: 4.5rem;
 
   display: flex;
   justify-content: center;
@@ -77,6 +74,21 @@ html{
 
   animation: animReality 8s ease;
 }
+.sub-intro{
+  /*border: 1px solid red;*/
+  flex-grow: 3;
+
+  color: $secondary-fadeLight-color;
+  font-family: $main-font;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+
+  display: flex;
+  justify-content: center;
+
+  animation: subIntro 8s ease-in;
+}
+
 .home-headings{
   background: $home-headings-color;
   -webkit-background-clip: text;
@@ -114,12 +126,21 @@ html{
     opacity: 1;
   }
 }
-
+@keyframes subIntro {
+  0%	, 65% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  75%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*----------------------- Spaceship Container ---------------------------*/
 .main-anim-img{
   position: relative;
   /*border: 1px solid red;*/
-  flex-grow: 1;
+  flex-grow: 2;
 }
 .spaceship-container{
   /*border: 1px solid palegoldenrod;*/
