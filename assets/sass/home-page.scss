@@ -46,7 +46,7 @@ html{
   justify-content: center;
   align-items: flex-end;
 
-  animation: animVision 8s ease;
+  animation: animVision 6s ease-in;
 }
 .into{
   /*border: 1px solid red;*/
@@ -59,7 +59,7 @@ html{
   justify-content: center;
   align-items: center;
 
-  animation: animInto 8s ease;
+  animation: animInto 6s ease-in;
 }
 .reality{
   /*border: 1px solid yellow;*/
@@ -72,7 +72,7 @@ html{
   justify-content: center;
   align-items: flex-start;
 
-  animation: animReality 8s ease;
+  animation: animReality 6s ease-in;
 }
 .sub-intro{
   /*border: 1px solid red;*/
@@ -86,7 +86,7 @@ html{
   display: flex;
   justify-content: center;
 
-  animation: subIntro 8s ease-in;
+  animation: subIntro 6s ease-in;
 }
 
 .home-headings{
@@ -97,17 +97,27 @@ html{
   filter: drop-shadow(2.5rem 2.5rem 0.6rem #38495a);
 }
 @keyframes animVision {
-  0%	, 35% {
+  0%	, 10% {
     transform: translateY(-2.6rem);
     opacity: 0;
   }
-  50%, 100% {
+  25%, 100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes animInto {
-  0%	, 45% {
+  0%	, 25% {
+    transform: translateY(-2.6rem);
+    opacity: 0;
+  }
+  40%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animReality {
+  0%	, 40% {
     transform: translateY(-2.6rem);
     opacity: 0;
   }
@@ -116,22 +126,12 @@ html{
     opacity: 1;
   }
 }
-@keyframes animReality {
-  0%	, 55% {
-    transform: translateY(-2.6rem);
-    opacity: 0;
-  }
-  65%, 100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 @keyframes subIntro {
-  0%	, 65% {
+  0%	, 50% {
     transform: translateY(-2rem);
     opacity: 0;
   }
-  75%, 100% {
+  65%, 100% {
     transform: translateY(0);
     opacity: 1;
   }
