@@ -115,7 +115,7 @@ html {
   }
 }
 @keyframes animInto {
-  0%, 25% {
+  0%, 20% {
     transform: translateY(-2.6rem);
     opacity: 0;
   }
@@ -125,7 +125,7 @@ html {
   }
 }
 @keyframes animReality {
-  0%, 40% {
+  0%, 35% {
     transform: translateY(-2.6rem);
     opacity: 0;
   }

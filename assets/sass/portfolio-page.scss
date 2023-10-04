@@ -3,7 +3,7 @@
 .portfolio{
   background-color: $primary-bg-color;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
 
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
 }
 .portfolio-heading{
   /*border: 1px solid red;*/
-  flex-grow: 0.5;
+  flex-grow: 0.3;
 
   color: $page-heading;
   font-size: 3.6rem;
@@ -24,15 +24,135 @@
   align-items: flex-end;
 }
 .portfolio-content{
-  border: 1px solid red;
-  flex-grow: 4;
+  /*border: 1px solid red;*/
+  flex-grow: 6;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.project-holders{
+  /*border: 1px solid blue;*/
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
+.project-holders>div{
+  width: 70%;
+  height: 90%;
+  border-radius: 1rem;
+  box-shadow: 1.3px 1.3px 5px $primary-color inset,1.3px 1.3px 5px $primary-color;
 
+  display: flex;
+  justify-content: space-between;
+}
+.project-img-holder{
+  /*border: 1px solid red;*/
+  flex-grow: 1.5;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  img{
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    border-radius: 1rem;
+  }
+}
+.project-content-holder{
+  /*border: 1px solid yellow;*/
+  flex-grow: 1;
 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.project-heading{
+  /*border: 1px solid red;*/
+  flex-grow: 1.5;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  h2{
+    position: absolute;
+    color: $secondary-color;
+    font-size: 2.3rem;
+    letter-spacing: 0.3rem;
+  }
+}
 
+.project-details{
+  /*border: 1px solid red*/;
+  flex-grow: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p{
+    position: absolute;
+    left: 2rem;
+    color: $secondary-color;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+.project-tech{
+  /*border: 1px solid red;*/
+  flex-grow: 0.5;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15%;
+    height: 50%;
+    color: $secondary-color;
+    background: $project-link-bg;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    border-radius: 0.4rem;
+  }
+}
+
+.project-links{
+  /*border: 1px solid red;*/
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25%;
+    height: 45%;
+    color: $secondary-color;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    border-radius: 1rem;
+  }
+  div:hover{
+    box-shadow: 1.3px 1.3px 5px $primary-color inset,1.3px 1.3px 5px $primary-color;
+    cursor: pointer;
+  }
+}
 
 
 

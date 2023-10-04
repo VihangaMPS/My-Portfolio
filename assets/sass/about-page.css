@@ -59,7 +59,7 @@ html {
 
 .abt-img-container {
   /*border: 1px solid yellow;*/
-  flex-grow: 3;
+  flex-grow: 1;
   display: flex;
   justify-content: space-between;
 }
@@ -171,7 +171,7 @@ html {
 .links-container > div > a {
   width: 4rem;
   height: 4rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -181,7 +181,7 @@ html {
 /*------------------- About Me Content ---------------------*/
 .abt-content-container {
   /*border: 1px solid yellow;*/
-  flex-grow: 0.5;
+  flex-grow: 0.1;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -374,130 +374,53 @@ html {
   justify-content: space-evenly;
 }
 
-.anim-div {
-  /*border: 1px solid white;*/
-  width: 8rem;
-  height: 100%;
+.scroller {
+  max-width: 80vw;
 }
 
-.anim-div01 {
-  animation: div1 10s ease-in-out infinite;
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  gap: 10rem;
+  justify-content: space-around;
 }
 
-@keyframes div1 {
-  0%, 30% {
-    background-image: url("../image/skills/html-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  35%, 65% {
-    background-image: url("../image/skills/bootstrap-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  70%, 100% {
-    background-image: url("../image/skills/git-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-.anim-div02 {
-  animation: div2 10s ease-in-out infinite;
+.scroller__inner img {
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
-@keyframes div2 {
-  0%, 30% {
-    background-image: url("../image/skills/css-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  35%, 65% {
-    background-image: url("../image/skills/angular-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  70%, 100% {
-    background-image: url("../image/skills/intellij-idea-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-.anim-div03 {
-  animation: div3 10s ease-in-out infinite;
+.scroller[data-animated=true] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-@keyframes div3 {
-  0%, 30% {
-    background-image: url("../image/skills/sass-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  35%, 65% {
-    background-image: url("../image/skills/spring-boot-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  70%, 100% {
-    background-image: url("../image/skills/mysql-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-.anim-div04 {
-  animation: div4 10s ease-in-out infinite;
+.scroller[data-animated=true] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
-@keyframes div4 {
-  0%, 30% {
-    background-image: url("../image/skills/javascript-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  35%, 65% {
-    background-image: url("../image/skills/typescript-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  70%, 100% {
-    background-image: url("../image/skills/postman-api-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-.anim-div05 {
-  animation: div5 10s ease-in-out infinite;
+.scroller[data-direction=right] {
+  --_animation-direction: reverse;
 }
 
-@keyframes div5 {
-  0%, 30% {
-    background-image: url("../image/skills/jquery-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  35%, 65% {
-    background-image: url("../image/skills/firebase-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  70%, 100% {
-    background-image: url("../image/skills/android-70.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.scroller[data-direction=left] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed=fast] {
+  --_animation-duration: 50s;
+}
+
+.scroller[data-speed=slow] {
+  --_animation-duration: 70s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }
 
